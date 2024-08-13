@@ -1,0 +1,107 @@
+.content-4 {
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+}
+.content-4-container {
+  margin-top: 20px;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-container {
+  align-content: center;
+  height: 100%;
+  width: 90%;
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 300px;
+  grid-template-areas:
+    "category-1 category-2"
+    "category-3 category-3";
+}
+.category-1 {
+  grid-area: category-1;
+  content: "";
+}
+.category-2 {
+  grid-area: category-2;
+  content: "";
+}
+.category-3 {
+  grid-area: category-3;
+  content: "";
+}
+.category-img {
+  height: 100%;
+}
+.category {
+  position: relative;
+}
+.category-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.category-title {
+  bottom: 60px;
+  left: 20px;
+  position: absolute;
+  color: white;
+  font-family: "Protest Strike", sans-serif;
+}
+.category-title h1 {
+  font-size: 40px;
+}
+.category-title button {
+  font-family: "Protest Strike", sans-serif;
+  margin-top: 20px;
+  border: none;
+  border-radius: 0;
+  height: 50px;
+  width: 200px;
+  transition: 0.5s ease;
+}
+.category-title button:hover {
+  transition: 0.5s ease;
+  background-color: orangered;
+  color: white;
+}
+@media screen and (max-width: 799px) {
+  .category-container {
+    width: 90%;
+    height: 90%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "category-1"
+      "category-2"
+      "category-3";
+  }
+  .content-4-container {
+    margin-top: 0px;
+    height: 100%;
+  }
+  .content-4 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+  .content-4-container {
+    margin-top: 0px;
+    height: 90%;
+    width: 100%;
+  }
+  .category-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  .content-4-container {
+    width: 90%;
+  }
+}

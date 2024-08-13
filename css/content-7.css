@@ -1,0 +1,133 @@
+.content-7 {
+  position: relative;
+  flex-direction: column;
+}
+.puma-title {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.puma-category {
+  padding-right: 20px;
+  border-right: solid 10px orange;
+  font-family: "Protest Strike", sans-serif;
+  color: black;
+  max-width: 1366px;
+}
+.content-7 .shoe-form-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 410px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  scrollbar-width: none; /* For Firefox */
+}
+.content-7 .shoe-form-container::-webkit-scrollbar {
+  display: none;
+}
+.content-7 .shoe-item {
+  background-color: rgb(19, 18, 18);
+  height: 100%;
+  width: 330px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-7 .shoe-item:hover {
+  transition: 0.5s ease-out;
+  border: solid 10px orangered;
+}
+.content-7 .shoe-item h1 {
+  top: 10px;
+  left: 20px;
+  position: absolute;
+  font-size: 70px;
+  font-family: "Kode Mono", monospace;
+  color: rgb(95, 91, 91);
+  z-index: 0;
+}
+
+.content-7 .shoe-container {
+  display: flex;
+  gap: 50px;
+}
+.content-7 .s-item {
+  height: 90%;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.content-7 .s-item h2 {
+  margin-top: 30px;
+  color: white;
+  width: 68%;
+  height: 150px;
+  font-size: 30px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 500;
+}
+
+.content-7 .s-item h3 {
+  color: white;
+  top: 145px;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border-bottom: solid 5px rgb(88, 194, 236);
+}
+.content-7 .s-item .shoe-type {
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+}
+.content-7 .s-item button {
+  top: 145px;
+  right: 5px;
+  height: 40px;
+  width: 120px;
+  position: absolute;
+  font-family: "Protest Strike", sans-serif;
+  border: none;
+  border-radius: 0px;
+}
+.content-7 .s-item img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 499px) {
+  .content-7 .shoe-form-container {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .content-7 .shoe-form-container {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+  .content-7 .shoe-form-container {
+    width: 502px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+  .content-7 .shoe-form-container {
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+  .content-7 .shoe-form-container {
+    width: 702px;
+  }
+}

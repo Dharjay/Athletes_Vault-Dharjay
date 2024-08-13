@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+.content-5 {
+  background-color: rgb(241, 240, 240);
+  position: relative;
+  flex-direction: column;
+}
+.nike-category {
+  padding-right: 20px;
+  border-right: solid 10px blue;
+  font-family: "Protest Strike", sans-serif;
+}
+.nike-title {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.shoe-form-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 410px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  scrollbar-width: none; /* For Firefox */
+}
+.shoe-form-container::-webkit-scrollbar {
+  display: none;
+}
+.shoe-item {
+  height: 100%;
+  width: 330px;
+  height: 400px;
+  background-color: rgb(223, 219, 219);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 10px black;
+  transition: 1s ease;
+}
+.shoe-item:hover {
+  transition: 0.2s ease;
+  border: solid 10px #008080;
+}
+.shoe-item h1 {
+  top: 10px;
+  left: 20px;
+  position: absolute;
+  font-size: 70px;
+  font-family: "Kode Mono", monospace;
+  color: white;
+  z-index: 0;
+}
+
+.shoe-container {
+  display: flex;
+  gap: 50px;
+}
+.s-item {
+  height: 90%;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s-item h2 {
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.856);
+  width: 68%;
+  height: 150px;
+  font-size: 30px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 500;
+}
+
+.s-item h3 {
+  top: 145px;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border-bottom: solid 5px rgb(88, 194, 236);
+}
+.s-item .shoe-type {
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+}
+.s-item button {
+  top: 145px;
+  right: 5px;
+  height: 40px;
+  width: 120px;
+  position: absolute;
+  font-family: "Protest Strike", sans-serif;
+  border: none;
+  border-radius: 0px;
+}
+.s-item img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 499px) {
+  .shoe-form-container {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .shoe-form-container {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+  .shoe-form-container {
+    width: 502px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+  .shoe-form-container {
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+  .shoe-form-container {
+    width: 702px;
+  }
+}

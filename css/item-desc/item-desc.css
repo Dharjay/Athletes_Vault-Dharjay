@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  min-height: 100vh;
+  position: relative;
+}
+
+.item-desc-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 1902px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommended {
+  position: absolute;
+  top: 50px;
+  z-index: 90;
+  border-right: solid 10px red;
+  width: 100%;
+  text-align: center;
+  padding-left: 260px;
+  font-family: "Protest Strike", sans-serif;
+}
+form {
+  position: relative;
+  max-width: 1902px;
+  height: 80%;
+  width: 90%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 240px 240px;
+  grid-template-areas:
+    "category category category category"
+    "item-1 item-1 item-2 item-3"
+    "item-1 item-1 item-4 item-4 ";
+}
+
+.grid-item {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2.5fr 0.5fr;
+  position: relative;
+}
+form .grid-item:nth-child(1) {
+  grid-area: category;
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 1fr;
+}
+
+form .grid-item:nth-child(2) {
+  border: none;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+  border-radius: 5px;
+  grid-area: item-1;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 0.3fr 0.5fr;
+}
+form .grid-item:nth-child(3) {
+  border: none;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+  border-radius: 5px;
+  grid-area: item-2;
+}
+form .grid-item:nth-child(4) {
+  border: none;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+  border-radius: 5px;
+  grid-area: item-3;
+}
+form .grid-item:nth-child(5) {
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+  border-radius: 5px;
+  grid-area: item-4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* category */
+.brand-name {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Protest Strike", sans-serif;
+}
+.brand-name h1 {
+  font-size: 40px;
+}
+.slash {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.slash .slashes:nth-child(1) {
+  content: "";
+  border: solid 1px black;
+  width: 30%;
+}
+.slash .slashes:nth-child(2) {
+  content: "";
+  border: solid 1px black;
+  width: 20%;
+}
+.slash .slashes:nth-child(3) {
+  content: "";
+  border: solid 1px black;
+  width: 30%;
+}
+.brand-description {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+}
+/* category */
+
+/* main-item */
+.price {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img img {
+  max-width: 400px;
+  height: auto;
+  width: 60%;
+  /* Rotate the element by 45 degrees */
+}
+.shoe-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Protest Strike", sans-serif;
+}
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 30px;
+}
+.icon-button h1 {
+  font-family: "Protest Strike", sans-serif;
+}
+.icon-button button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: solid 3px black;
+  font-size: 25px;
+  background-color: white;
+}
+
+/* main-item */
+
+/* small items */
+.logo {
+  top: 15px;
+  left: 20px;
+  position: absolute;
+  font-family: "Protest Strike", sans-serif;
+}
+.price {
+  top: 10px;
+  right: 20px;
+}
+.item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-img img {
+  height: auto;
+  width: 75%;
+  max-width: 220px;
+}
+
+/* small items */
+#slider {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+#slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.img-cons {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 auto;
+  position: relative;
+}
+.img-cons button {
+  z-index: 20;
+  bottom: 20px;
+  left: 30px;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 0;
+  font-family: "Protest Strike", sans-serif;
+}
+.img-cons button:hover {
+  transition: 0.5s ease;
+  background-color: orangered;
+  color: white;
+}
+@media screen and (max-width: 599px) {
+  form {
+    height: 80%;
+    margin-top: 100px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 240px 240px 240px 240px;
+    grid-template-areas:
+      "category"
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4";
+  }
+
+  form .grid-item:nth-child(1) {
+    grid-area: category;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+  }
+
+  .slash {
+    width: 100%;
+  }
+  .recommended {
+    top: 70px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  form .grid-item:nth-child(2) {
+    border: none;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    grid-area: item-1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5fr 0.3fr 0.2fr;
+  }
+
+  /* main-item */
+  .price h1 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img img {
+    min-width: 200px;
+    max-width: 400px;
+    height: 60%;
+    width: 40%;
+    /* Rotate the element by 45 degrees */
+  }
+  .shoe-name h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+  }
+  .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon-button h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+  }
+  .icon-button button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: solid 3px black;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+
+  /* main-item */
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  form {
+    height: 80%;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 240px 240px;
+    grid-template-areas:
+      "category category "
+      "item-1 item-2 "
+      "item-3 item-4 ";
+  }
+  .recommended {
+    top: 70px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  form .grid-item:nth-child(2) {
+    border: none;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    grid-area: item-1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.2fr 0.3fr;
+  }
+
+  /* main-item */
+  .price h1 {
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img img {
+    max-width: 220px;
+    height: 55%;
+    width: 75%;
+    /* Rotate the element by 45 degrees */
+  }
+  .shoe-name h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+  }
+  .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+  }
+  .icon-button h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+  }
+  .icon-button button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: solid 3px black;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  /* main-item */
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  form {
+    height: 80%;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 240px 240px;
+    grid-template-areas:
+      "category category category "
+      "item-1 item-2 item-3"
+      "item-4 item-4 item-4 ";
+  }
+
+  .recommended {
+    top: 80px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  form .grid-item:nth-child(2) {
+    border: none;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    grid-area: item-1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.2fr 0.3fr;
+  }
+
+  /* main-item */
+  .price h1 {
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img img {
+    max-width: 220px;
+    height: auto;
+    width: 75%;
+    /* Rotate the element by 45 degrees */
+  }
+  .shoe-name h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+  }
+  .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+  }
+  .icon-button h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px;
+  }
+  .icon-button button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: solid 3px black;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+
+  /* main-item */
+}
+
+/* for category */
+
+@media screen and (max-width: 599px) {
+  form .grid-item:nth-child(1) {
+    grid-template-columns: fr 1fr;
+  }
+  .brand-name {
+    justify-content: start;
+  }
+  .brand-description {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 812px) {
+  form .grid-item:nth-child(1) {
+    grid-template-columns: fr 1fr;
+  }
+  .brand-name {
+    justify-content: start;
+  }
+  .brand-description h5 {
+    font-size: 9px;
+  }
+}

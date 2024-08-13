@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/483187a7c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/item-desc/item-desc.css" />
+    <link rel="stylesheet" href="css/item-desc/item-desc-nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Athletes Vault</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav-bar">
+      <div class="brand">
+        <h3 onclick="window.location.href='#intro'">ATHLETES VAULT</h3>
+      </div>
+
+      <ul>
+        <a href="main.html#home"><li>HOME</li></a>
+        <a href="main.html#shop"> <li>SHOP</li> </a>
+        <a href="search.html"> <li>SEARCH</li> </a>
+        <a href="cart.html"><li>CART</li></a>
+      </ul>
+    </div>
+    <!-- navbar -->
+    <div class="item-desc-container">
+      <form action="">
+        <!-- brand name -->
+        <div class="grid-item">
+          <div class="brand-name">
+            <h1>PUMA</h1>
+          </div>
+          <div class="slash">
+            <div class="slashes"></div>
+            <div class="slashes"></div>
+            <div class="slashes"></div>
+          </div>
+          <div class="brand-description">
+            <h5>
+              Shop for the newest releases & Retro Jordans. Shipped straight to
+              your home from our warehouse in 3-5 days.
+            </h5>
+          </div>
+        </div>
+        <!-- brand name -->
+
+        <!-- main-item -->
+        <div
+          class="grid-item animate__animated animate__fadeInLeft animate__delay-.5 .5s"
+        >
+          <div class="price">
+            <h1>$249</h1>
+          </div>
+          <div class="img">
+            <img
+              src="img/RS-X-Geek-Sneakers.png"
+              alt=""
+              style="transform: rotate(-35deg)"
+            />
+          </div>
+          <div class="shoe-name">
+            <h1>RS x GEEK Sneakers</h1>
+          </div>
+          <div class="icon-button">
+            <h1>PUMA</h1>
+            <button>
+              <i class="fa-solid fa-plus fa-sm" style="color: #000000"></i>
+            </button>
+          </div>
+        </div>
+        <!-- main-item -->
+
+        <!-- item-2 -->
+        <div
+          class="grid-item animate__animated animate__fadeInUp animate__delay-1s 1s"
+          onclick="window.location.href='item-desc.html'"
+        >
+          <div class="logo">
+            <h3>ADIDAS</h3>
+          </div>
+          <div class="price">
+            <h3>$220</h3>
+          </div>
+          <div class="item-img">
+            <img
+              src="img/Oznova_Shoes.png"
+              alt=""
+              style="transform: rotate(35deg)"
+            />
+          </div>
+          <div class="shoe-name">
+            <h3>Adidas Oznova Shoes</h3>
+          </div>
+        </div>
+        <!-- item-2 -->
+
+        <!-- item-3 -->
+        <div
+          class="grid-item animate__animated animate__fadeInUp animate__delay-2s 2s"
+          onclick="window.location.href='item-desc.html'"
+        >
+          <div class="logo">
+            <h3>NIKE</h3>
+          </div>
+          <div class="price">
+            <h3>$260</h3>
+          </div>
+          <div class="item-img">
+            <img
+              src="img/air-force-1-shadow.png"
+              alt=""
+              style="transform: rotate(-35deg)"
+            />
+          </div>
+          <div class="shoe-name">
+            <h3>Air Force 1 Shadow</h3>
+          </div>
+        </div>
+        <!-- item-3 -->
+
+        <!-- item-4 -->
+        <div class="grid-item">
+          <div id="slider">
+            <div id="image-container">
+              <div class="img-cons">
+                <img class="slide" src="img/logo-adidas.jpg" alt="Image 1" />
+                <button
+                  onclick="window.location.href='main.html#adidas'"
+                  type="button"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+              <div class="img-cons">
+                <img class="slide" src="img/logo-nike.jpg" alt="Image 2" />
+                <button
+                  onclick="window.location.href='main.html#nike'"
+                  type="button"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+              <div class="img-cons">
+                <img class="slide" src="img/logo-puma.jpg" alt="Image 3" />
+                <button
+                  onclick="window.location.href='main.html#puma'"
+                  type="button"
+                >
+                  SHOP NOW
+                </button>
+              </div>
+              <!-- Add more images as needed -->
+            </div>
+          </div>
+        </div>
+        <!-- item- 4-->
+        <div class="recommended">
+          <h2>Recommended Items</h2>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageContainer = document.getElementById("image-container");
+        const slides = document.querySelectorAll(".img-cons");
+        const interval = 5000; // 5 seconds in milliseconds
+        let currentIndex = 0;
+
+        function changeSlide() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          const translateValue = -currentIndex * 100 + "%";
+          imageContainer.style.transform = "translateX(" + translateValue + ")";
+        }
+
+        setInterval(changeSlide, interval);
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

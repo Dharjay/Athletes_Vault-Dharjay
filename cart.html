@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/483187a7c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/cart-css/cart.css" />
+    <link rel="stylesheet" href="css/cart-css/nav-cart.css" />
+    <link rel="stylesheet" href="css/cart-css/cart-container.css" />
+    <title>Athletes Vault</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="nav-bar">
+      <div class="brands">
+        <h3>ATHLETES VAULT</h3>
+      </div>
+
+      <ul>
+        <a href="main.html#home"><li>HOME</li></a>
+        <a href="main.html#shop"> <li>SHOP</li> </a>
+        <a href="search.html"> <li>SEARCH</li> </a>
+        <a href="ordered.html"><li>ORDERED ITEMS</li></a>
+      </ul>
+    </div>
+    <!-- navbar -->
+
+    <!-- container -->
+    <div class="cart-container">
+      <!-- form -->
+      <form action="">
+        <!-- form-grid 1 -->
+        <div class="form-grid-1">
+          <h1>Your Cart</h1>
+          <h3>
+            You are eligible for standard free shipping here in the Philippines.
+          </h3>
+        </div>
+        <!-- form-grid 1 -->
+
+        <!-- form-grid 2 -->
+        <div class="form-grid-2">
+          <!-- grid item 1 -->
+          <div class="grid-item-1">
+            <div class="grid-item-nav">
+              <h3>Product</h3>
+              <h3>Brand</h3>
+              <h3>Quantity</h3>
+              <h3>Total</h3>
+            </div>
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/Questar_Flow_NXT_Shoes.png" alt="" />
+                <div class="item-description">
+                  <h3>Questar Flow NXT Shoes</h3>
+                  <h3>US / Men / Black</h3>
+                  <h3 class="item-price">$249.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Adidas</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$249.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/air-force-1-shadow.png" alt="" />
+                <div class="item-description">
+                  <h3>Air Force 1 Shadow</h3>
+                  <h3>US / Men / White</h3>
+                  <h3 class="item-price">$289.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Nike</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$289.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/Exotek-Base-Sneakers.png" alt="" />
+                <div class="item-description">
+                  <h3>Exotek Base Sneakers</h3>
+                  <h3>US / Men / Black</h3>
+                  <h3 class="item-price">$220.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Nike</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$220.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/invincible-3.png" alt="" />
+                <div class="item-description">
+                  <h3>Nike Invincible 3</h3>
+                  <h3>US / Men / Black</h3>
+                  <h3 class="item-price">$200.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Nike</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$200.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/air-jordan-1-elevate-.png" alt="" />
+                <div class="item-description">
+                  <h3>Air Jordan 1 Elevate</h3>
+                  <h3>US / Men / Black / White</h3>
+                  <h3 class="item-price">$200.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Nike</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$200.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/Hyperturf_Shoes.png" alt="" />
+                <div class="item-description">
+                  <h3>Hyperturf Shoes</h3>
+                  <h3>US / Men / Brown</h3>
+                  <h3 class="item-price">$200.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Adidas</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$200.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/Lite_Racer_3.0_Shoes.png" alt="" />
+                <div class="item-description">
+                  <h3>Lite Racer 3.0 Shoes</h3>
+                  <h3>US / Men / Black</h3>
+                  <h3 class="item-price">$200.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Adidas</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$200.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+
+            <!-- cart-item -->
+            <div class="cart-item">
+              <div class="product">
+                <img src="img/Ultrabounce_Shoes.png" alt="" />
+                <div class="item-description">
+                  <h3>Ultra Bounce Shoes</h3>
+                  <h3>US / Men / Black</h3>
+                  <h3 class="item-price">$200.00</h3>
+                </div>
+              </div>
+              <div class="brand">
+                <h2>Adidas</h2>
+              </div>
+              <div class="quantity">
+                <div class="button-container">
+                  <button onclick="add(this)" type="button">+</button>
+                  <input type="text" class="numberInput" value="1" readonly />
+                  <button onclick="deduct(this)" type="button">-</button>
+                </div>
+                <div class="remove-item">
+                  <button>Remove Item</button>
+                </div>
+              </div>
+              <div class="total">
+                <h2 class="totalPrice">$200.00</h2>
+              </div>
+            </div>
+            <!-- cart-item -->
+          </div>
+          <!-- grid item 1 -->
+
+          <!-- grid item 2 -->
+          <div class="grid-item-2">
+            <div class="total-container">
+              <div class="total-items-container">
+                <div class="total-items">
+                  <div class="overall-total">
+                    <h2>Total</h2>
+                    <h2>PRICE</h2>
+                  </div>
+                  <div class="shipping-description">
+                    <h4>
+                      Shipping & taxes calculated at checkout. Orders outside of
+                      the PH may be subject to import fees / duties.
+                    </h4>
+                  </div>
+                  <button onclick="openConfirmation()" type="button">
+                    CHECKOUT
+                  </button>
+                </div>
+              </div>
+
+              <div class="payment-options">
+                <img src="img/payment.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- confirmation -->
+          <div id="overlay">
+            <div id="modal">
+              <h2>Total Price: <span id="modalTotalPrice"></span></h2>
+              <!-- Add your actual total price here -->
+              <p>Are you sure you want to confirm the checkout?</p>
+              <div class="btns">
+                <button onclick="confirmCheckout()" type="button">
+                  Confirm
+                </button>
+                <button onclick="cancelCheckout()" type="button">Cancel</button>
+              </div>
+              <div id="successAlert">
+                <h1>Checkout Successful.</h1>
+              </div>
+              <div id="cancelAlert">
+                <h1>Checkout Cancelled.</h1>
+              </div>
+            </div>
+          </div>
+          <!-- confirmation -->
+
+          <!-- grid item 2 -->
+        </div>
+        <!-- form-grid 2 -->
+      </form>
+      <!-- form -->
+    </div>
+    <!-- container -->
+    <script>
+      function updateTotalPrice(element) {
+        // Find the parent cart-item element
+        var cartItem = element.closest(".cart-item");
+
+        // Get the item price and quantity values
+        var itemPrice = parseFloat(
+          cartItem.querySelector(".item-price").textContent.slice(1)
+        ); // Remove "$" and convert to a number
+        var quantity = parseInt(cartItem.querySelector(".numberInput").value);
+
+        // Calculate the total price
+        var totalPrice = itemPrice * quantity;
+
+        // Update the total price element
+        cartItem.querySelector(".totalPrice").textContent =
+          "$" + totalPrice.toFixed(2);
+
+        // After updating individual item total, recalculate overall total
+        recalculateOverallTotal();
+        renderOverallTotal();
+      }
+
+      function renderOverallTotal() {
+        // Get the overall total value
+        var overallTotal = calculateOverallTotal();
+
+        // Update the content of the second <h2> element with the calculated total
+        document.querySelector(".overall-total h2:last-child").textContent =
+          "$" + overallTotal.toFixed(2);
+      }
+
+      function calculateOverallTotal() {
+        var cartItems = document.querySelectorAll(".cart-item");
+        var overallTotal = 0;
+
+        // Iterate through each cart item and sum up the total
+        cartItems.forEach(function (cartItem) {
+          var totalPrice = parseFloat(
+            cartItem.querySelector(".totalPrice").textContent.slice(1)
+          );
+          overallTotal += totalPrice;
+        });
+
+        return overallTotal;
+      }
+
+      function add(element) {
+        // Find the input element and increment its value
+        var inputElement = element
+          .closest(".button-container")
+          .querySelector(".numberInput");
+        inputElement.value = parseInt(inputElement.value) + 1;
+
+        // Update the total price
+        updateTotalPrice(element);
+        recalculateOverallTotal();
+        renderOverallTotal();
+      }
+
+      function deduct(element) {
+        // Find the input element and decrement its value (with a minimum of 1)
+        var inputElement = element
+          .closest(".button-container")
+          .querySelector(".numberInput");
+        inputElement.value = Math.max(parseInt(inputElement.value) - 1, 1);
+
+        // Update the total price
+        updateTotalPrice(element);
+        recalculateOverallTotal();
+        renderOverallTotal();
+      }
+
+      function recalculateOverallTotal() {
+        // Get all cart items
+        var cartItems = document.querySelectorAll(".cart-item");
+
+        // Initialize overall total
+        var overallTotal = 0;
+
+        // Iterate through each cart item and sum up the total
+        cartItems.forEach(function (cartItem) {
+          var totalPrice = parseFloat(
+            cartItem.querySelector(".totalPrice").textContent.slice(1)
+          );
+          overallTotal += totalPrice;
+        });
+
+        // Update the overall total element
+        document.querySelector(".overall-total h2:last-child").textContent =
+          "$" + overallTotal.toFixed(2);
+      }
+
+      function openConfirmation() {
+        resetConfirmationState();
+        document.getElementById("overlay").style.display = "flex";
+        // Render the overall total
+        // Get the overall total value
+        var overallTotal = calculateOverallTotal();
+
+        // Update the content of the modal span
+        document.getElementById("modalTotalPrice").textContent =
+          "$" + overallTotal.toFixed(2);
+      }
+
+      function closeConfirmation() {
+        resetConfirmationState();
+        document.getElementById("overlay").style.display = "none";
+      }
+
+      function confirmCheckout() {
+        document.getElementById("successAlert").style.display = "block";
+        document.getElementById("cancelAlert").style.display = "none";
+        setTimeout(closeConfirmation, 2000); // Close the overlay after 2 seconds
+      }
+
+      function cancelCheckout() {
+        document.getElementById("cancelAlert").style.display = "block";
+        document.getElementById("successAlert").style.display = "none";
+        setTimeout(closeConfirmation, 2000); // Close the overlay after 2 seconds
+      }
+
+      function resetConfirmationState() {
+        document.getElementById("successAlert").style.display = "none";
+        document.getElementById("cancelAlert").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
